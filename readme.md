@@ -1,14 +1,19 @@
-# ДЗ Тема: Основи технології  Docker
+# FastAPI та PostgreSQL у Docker
 
-Створіть віртуальне оточення то встановіть необхідні бібліотеки
+Збірка й запуск застосунку та бази даних:
 
 ```bash
-pip install -r requirements.txt
+docker-compose up --build
 ```
 
-Запуск:
+Відкрийте http://localhost:8000 і натисніть **«Перевірити БД»**, щоб перевірити підключення до PostgreSQL.
 
-```bash 
-python main.py
+Зупинка: натисніть `Ctrl+C`, потім виконайте:
+
+```bash
+docker-compose down
 ```
 
+## Результат
+
+![FastAPI працює, підключення до бази даних успішне](done.png)
